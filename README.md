@@ -1,1 +1,5 @@
 # nosql-challenge
+
+To analyze the food establishments around the United Kingdom, first the json with the establishment data was imported with the database and collection containing establishment data. An update to the establishments collection was made, adding the information for a new business named Penang Flavours, with the fields latitude, longitude, and rating value converted to an integer data type using the update_many command.  Then all the documents where the local authority name is Dover were deleted using the delete_many function.
+
+Then a few queries were run, first to find the establishments where the hygiene score was equal to 20. Then a query was done to find the establishments where the rating value was greater than or equal to four, and another one was done to find the top five establishments nearest to Penang Flavours where the rating value was five, and it was sorted by lowest hygiene score.  Lastly, the number of establishments in each local authority area was found, where there is a hygiene score of zero, and this was done using the pipeline function.
